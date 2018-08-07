@@ -7,14 +7,19 @@ let moment = require('moment');
 let mysql = require('mysql');
 let app = new Koa();
 let router = new Router();
-let pool = mysql.createPool({
-	host: '127.0.0.1',
-	user: 'root',
-	password: '1qaz2wsxpl,okm',
-	database: 'db20180807'
-});
+try{
+	let pool = mysql.createPool({
+		host: '127.0.0.1',
+		user: 'root',
+		password: '1qaz2wsxpl,okm',
+		database: 'db20180807'
+	});
+}catch(e){
+	console.log(e);
+}
+
 router.post('/message/add', async ctx => {
-	let { name, phone, address, remark = '' } = ctx.request.body;
+	let { name, phone, address, remark } = ctx.request.body;
 	let create_time = moment().format('YYYY-MM-DD HH:mm');
 	if(!name){
 		ctx.body = {
@@ -84,7 +89,7 @@ router.get('/message/list', async ctx => {
 	};
 	ctx.body = await returnResults();
 });
-app.use(bodyParser());
+// app.use(bodyParser());
 let files = {};
 app.use(staticCache(require('path').join(__dirname, 'download'), {
 	// maxAge: 365 * 24 * 60 * 60,
@@ -98,4 +103,4 @@ for (let file in files){
 app
 	.use(router.routes())
 	.use(router.allowedMethods());
-app.listen(6666);
+app.listen(9666);
