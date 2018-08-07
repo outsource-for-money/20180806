@@ -1,0 +1,27 @@
+body { font-size: 13px; line-height: 180%; font-family: "微软雅黑"; background-color: rgb(255, 255, 255); margin: 0px; padding: 0px; color: rgb(0, 0, 0); }
+div, ul, p, img, li { padding: 0px; margin: 0px; list-style: outside none none; }
+img { width: 100%; border: medium none; vertical-align: top; }
+.container { min-width: 320px; max-width: 760px; margin: 0px auto; padding-bottom: 13%; }
+.wenzi { padding: 2%; }
+.bth { padding: 0px 2%; color: rgb(255, 255, 255); background-color: rgb(247, 14, 244); font-size: 15px; }
+.xbt1 { padding: 1% 2%; color: rgb(0, 0, 0); font-size: 15px; }
+.xbt { padding: 1% 2%; color: rgb(0, 0, 0); font-size: 15px; text-indent: 2em; }
+.xbt2 { padding: 1% 2%; color: rgb(255, 0, 0); font-size: 15px; text-indent: 2em; }
+.xbt3 { padding: 1% 2%; color: rgb(45, 173, 165); font-size: 15px; }
+.jz { padding: 1% 2%; color: rgb(0, 0, 0); font-size: 15px; text-align: center; }
+.zw { color: rgb(61, 60, 60); font-size: 13px; padding: 0px 2%; }
+.tel { background: rgb(255, 252, 210) none repeat scroll 0% 0%; text-align: center; color: rgb(230, 0, 18); padding: 10px 0px; font-size: 16px; margin: 2% 0px; }
+.tel font { font-size: 1.2em; font-weight: 800; padding: 6px 0px; display: block; }
+.tel img { width: 50%; margin-top: 12px; }
+.titl { font-weight: 800; font-size: 16px; color: rgb(255, 255, 255); text-align: center; background: rgb(68, 192, 6) none repeat scroll 0% 0%; padding: 8px 0px; }
+.a1 { padding: 2%; color: rgb(255, 0, 0); font-size: 15px; }
+.dgbtn { position: absolute; display: block; width: 34%; height: 68%; bottom: 12%; left: 9%; }
+.hd { position: absolute; display: block; width: 34%; height: 68%; bottom: 12%; left: 54%; }
+.mf { width: 84px; display: inline-block; height: 30px; }
+.back { padding: 0px 2%; color: rgb(255, 255, 255); background-color: rgb(45, 173, 165); text-align: center; }
+.btn { width: 100%; position: relative; }
+select { border: 1px solid rgb(153, 153, 153); }
+h2 { background-color: rgb(215, 66, 88); padding: 5px; text-align: center; }
+.btn { padding: 2px; max-width: 100%; border: 1px solid rgb(0, 187, 236); white-space: normal; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); font-family: 微软雅黑; font-size: 13px; border-radius: 5px; box-sizing: border-box !important; overflow-wrap: break-word !important; }
+.gudi { position: fixed; min-width: 320px; max-width: 760px; bottom: 0px; margin: 0px auto; left: 0px; right: 0px; }
+.i img { width: 100%; }

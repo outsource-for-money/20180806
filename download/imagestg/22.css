@@ -1,0 +1,69 @@
+/* ::::: http://www.jkdew.com/images/page_mp_article.css ::::: */
+
+html {  }
+body { line-height: 1.6; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 16px; }
+body, h1, h2, h3, h4, h5, p, ul, ol, dl, dd, fieldset, textarea { margin: 0px; }
+fieldset, legend, textarea, input, button { padding: 0px; }
+button, input, select, textarea { font-family: inherit; font-size: 100%; margin: 0px; }
+ul, ol { padding-left: 0px; list-style-type: none; list-style-position: inside; }
+a img, fieldset { border: 0px none; }
+a { text-decoration: none; }
+a { color: rgb(96, 127, 166); }
+.rich_media_inner { padding: 15px 10px; }
+.rich_media_title { line-height: 24px; font-weight: 700; font-size: 20px; word-wrap: break-word; }
+.rich_media_thumb { font-size: 0px; margin-top: 18px; }
+.rich_media_content { margin-top: 18px; color: rgb(62, 62, 62); word-wrap: break-word; }
+.rich_media_content p { min-height: 1em; word-wrap: normal; white-space: pre-wrap; margin-top: 1em; margin-bottom: 1em; }
+.rich_media_content p::after { content: "​"; display: block; height: 0px; clear: both; }
+.rich_media_content * { max-width: 100% ! important; word-wrap: break-word ! important; box-sizing: border-box ! important; }
+.rich_media_content img { height: auto ! important; }
+.rich_media_tool::after { content: "​"; display: block; height: 0px; clear: both; }
+@media screen and (min-width: 1023px) {
+	.rich_media { width: 740px; margin-left: auto; margin-right: auto; }
+	.rich_media_inner { padding: 20px; background-color: rgb(255, 255, 255); border-width: 0px 1px 1px; border-style: solid; border-color: rgb(217, 218, 220); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; }
+	.rich_media_content { min-height: 350px; }
+	.rich_media_title { padding-bottom: 10px; margin-bottom: 5px; border-bottom: 1px solid rgb(231, 231, 235); }
+}
+@media screen and (min-width: 1023px) {
+	.rich_media { position: relative; }
+	.rich_media_inner { padding-bottom: 78px; }
+}
+body { background-color: rgb(248, 247, 245); }
+h1, h2, h3, h4, h5, h6 { font-weight: 400; font-style: normal; font-size: 100%; }
+.rich_media_content { font-size: 16px; overflow: hidden; }
+.rich_media_content p { margin-top: 0px; margin-bottom: 0px; }
+@media screen and (min-width: 1023px) {
+	body { background-color: rgb(231, 232, 235); font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif; }
+	.rich_media_inner { position: relative; }
+}
+/* ::::: http://www.jkdew.com/images/buy_new.css ::::: */
+
+a { color: rgb(70, 70, 70); outline-style: none; text-decoration: none; }
+body { background-color: rgb(245, 245, 245); color: rgb(70, 70, 70); }
+body, button, input { font: 18px/22px Arial,"Microsoft YaHei"; }
+html, body { margin: 0px; padding: 0px; width: 100%; }
+img { border: medium none; vertical-align: bottom; }
+input, textarea, select { border: medium none; outline: medium none; }
+section, footer, nav, em, mark, p, span, ul, li, ol, h1, h2, h3, h4, input, textarea { font-style: normal; font-weight: normal; list-style: outside none none; margin: 0px; padding: 0px; }
+.block, header, footer, section { display: block; }
+.c_txt { text-align: center; }
+.i_pri { color: rgb(190, 12, 12); font-size: 18px; }
+.orange_bg { background-color: rgb(255, 80, 0) ! important; }
+.rel { position: relative; }
+.item_sec { padding: 10px; line-height: 30px; }
+.item_wrap { border-radius: 5px; box-shadow: 0px 1px 2px 2px rgb(228, 228, 228); overflow: hidden; padding: 10px; background: rgb(250, 250, 250) none repeat scroll 0% 0%; }
+.item_wrap img { float: left; margin: 0px 10px 10px 0px; }
+.sku_ul { clear: left; }
+.sku_ul li {  margin: 0px 6px 6px 0px; }
+.sku_ul li a { line-height: 30px; border: 1px solid rgb(206, 206, 208); background-color: rgb(250, 250, 250); border-radius: 5px; padding: 0px 15px; display: block;overflow: hidden;width: 100%;}
+.sku_ul li .sku_cur { border-color: rgb(255, 80, 0); }
+.i_pri { font-size: 14px; }
+.row { position: relative; padding: 5px 10px 5px 70px; }
+.row > label, .row > b { position: absolute; left: 0px; }
+.add { background: rgb(245, 245, 245) none repeat scroll 0% 0%; }
+.select, .input { border: 1px solid rgb(217, 217, 217); font-size: 14px; height: 30px; line-height: 30px; text-indent: 6px; vertical-align: middle; width: 100%; }
+.select { margin-right: 5px; width: 42%; }
+footer { padding: 5px 10px; }
+footer p.note { padding: 13px 10px; line-height: 30px; }
+#buy_now { color: rgb(255, 255, 255); border-radius: 4px; width: 100%; font-size: 16px; line-height: 40px; box-shadow: 0px -1px 0px 0px rgb(215, 67, 0) inset; border: 0px none; outline: medium none; }
+ol, ul { list-style-position: inside; }

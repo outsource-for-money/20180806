@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0044)http://www.veikoou.com/jfc/images/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>在线订单</title>
+    <link href="./public.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        <!--
+        #wforder{width:100%;}
+        .wftitle{border-color:#52CC52;}
+        .bdbox li span.bdl{width:25%;}
+        .bdbox li span.bdr{width:72%;}
+.STYLE1 {color: #FF0000}
+
+        -->
+    </style>
+</head>
+<body>
+<div id="wforder">
+    <form id="wfform" name="wfform" action="javascript:;" method="post" onsubmit="return postcheck()">
+        <input type="hidden" id="wfddll" name="wfddll" value="">
+        <div class="bdbox">
+            <ul>
+                    <li class="product">
+                     
+                        <span class="bdr red" style="width:100%;padding-left: 84px;">
+<input name="leixing" type="radio" class="dxk" id="a1" onclick="pricea()" value="叶氏减肥套餐  限时免费领取" checked="checked"> 
+                            <label for="a1">俏狐239套餐 限时免费领取</label>
+                        </span>                    </li>
+                    <li><span class="bdl"><em>*</em>姓名</span><span class="bdr">
+              <input type="text" name="name" class="txt kda"></span></li>
+                    <li><span class="bdl"><em>*</em>手机号码</span><span class="bdr"><input type="text" name="phone" class="txt kda"></span></li>
+					<li><span class="bdl"><em>*</em>详细地址</span><span class="bdr"><input type="text" name="address" class="txt kda"></span></li>
+                   
+                    <li class="guest"><span class="bdl">留言</span><span class="bdr"><textarea name="comment" onfocus="if(value==&#39;请尽量在星期天送货，送货之前手机联系，谢谢！&#39;){value=&#39;&#39;}" onblur="if (value ==&#39;&#39;){value=&#39;请尽量在星期天送货，送货之前手机联系，谢谢！&#39;}" class="guest kda">如果有其它需求，请在此说明</textarea></span></li>
+                
+                    <li class="sub"><input type="submit" name="wfsubmit" value="" class="send"></li>
+          </ul>
+        </div>
+    </form>
+</div>
+<script type="text/javascript"> 
+function postcheck(){
+    if (document.wfform.name.value==""){
+        alert('请填写姓名！');
+        document.wfform.name.focus();
+        return false;
+    }
+    var reg1 = /^[\u4e00-\u9fa5]{2,4}$/;
+    if (!reg1.test(document.wfform.name.value)){
+        alert('姓名格式不正确，请填写真实姓名！');
+        document.wfform.name.focus();
+        return false;
+    }
+    if (document.wfform.phone.value==""){
+        alert('请填写手机号码！');
+        document.wfform.phone.focus();
+        return false;
+    }
+    var reg2 = /^1[3,4,5,8]\d{9}$/;
+    if (!reg2.test(document.wfform.phone.value)){
+        alert('手机号码格式不正确，请填写正确的手机号码！');
+        document.wfform.phone.focus();
+        return false;
+    }
+    if (document.wfform.address.value==""){
+        alert('请填写详细地址！');
+        document.wfform.address.focus();
+        return false;
+    }
+    document.wfform.wfsubmit.disabled = true;
+    document.wfform.wfsubmit.value="正在提交，请稍等 >>";
+    
+    return true;
+}
+var wfllref = '';
+if (document.referrer.length > 0){
+	wfllref = document.referrer;
+}
+try{
+	if (wfllref.length == 0 && opener.location.href.length > 0){
+    wfllref = opener.location.href;
+	}
+}
+catch (e){}
+document.cookie="WFLLURL=" + wfllref + ";path=/";
+document.getElementById("wfddll").value = window.top.document.referrer;
+</script>
+
+
+</body></html>

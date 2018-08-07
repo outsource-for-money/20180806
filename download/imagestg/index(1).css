@@ -1,0 +1,55 @@
+/* ::::: http://tk.duyihu.org/css/style.css ::::: */
+
+body { font-size: 1.2em; font-family: "微软雅黑"; background-color: rgb(241, 241, 241); color: rgb(0, 0, 0); }
+html { overflow-x: hidden; overflow-y: auto; }
+* { margin: 0px; padding: 0px; }
+img { vertical-align: middle; border: 0px none; }
+.clear { clear: both; height: 0px; font-size: 0px; line-height: 0px; margin: 0px; padding: 0px; }
+a:active, a:focus { outline: medium none; }
+a { color: rgb(138, 138, 138); text-decoration: none; outline: medium none; }
+a:hover { color: rgb(0, 0, 0); }
+.w640 { margin: 0px auto; width: 640px; }
+a.btn01 { color: rgb(255, 255, 255); height: 2em; line-height: 2em; text-align: center; width: 6em; font-size: 1.5em; text-decoration: none; display: inline-block; border-bottom: 5px solid rgb(153, 0, 0); background: rgb(204, 0, 0) none repeat scroll 0% 0%; margin-left: 35%; margin-bottom: 1em; margin-top: 0.5em; }
+.mtop { margin-top: 1.2em; }
+.div01 { background: rgb(0, 0, 0) none repeat scroll 0% 0%; text-align: center; }
+.div02 { background: rgb(204, 0, 0) none repeat scroll 0% 0%; }
+.div02 .p1 { font-size: 20px; color: rgb(255, 255, 0); line-height: 42px; margin-top: 20px;display: block;overflow: hidden; text-align: center;}
+.div02 .p1 span.span1{
+	font-weight: bold;
+	
+}
+.div02 .p1 .span1 i{
+	background:#fff; text-align:center; padding:0 5px; color:#000; font-size:16px; box-shadow:#cecece 2px 2px 3px inset; font-style:normal; margin:0 5px;
+	}
+/*.div02 .p1 span { float: left; margin-left: 0.3em; }*/
+/*.div02 .p1 .span1 { background: transparent url('http://images.ltxian.com/www.ltxian.com_wapmk/mkimg_01.jpg') no-repeat scroll 0% 0%; width: 35px; height: 41px; display: block; margin: 0px 0px 0px 5px; color: rgb(0, 0, 0); font-size: 31px; text-align: center; line-height: 41px; font-weight: bold; }*/
+.div02 .p1 .span2 { margin-right: 5px; }
+.div02 .p2 { text-align: center; }
+.div02 .p2 a { background: transparent url('http://images.ltxian.com/www.ltxian.com_wapmk/mkimg_02-2.png') no-repeat scroll 0% 0%; width: 175px; height: 65px; display: block;
+margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+ }
+.div03 { background: rgb(140, 0, 1) none repeat scroll 0% 0%; text-align: center; }
+.sp { margin: 2.6em auto; z-index: 1; text-align: center; }
+.ordertwo { text-align: center; background: rgb(102, 102, 102) none repeat scroll 0% 0%; margin-left: auto; margin-right: auto; clear: both; padding: 2em 0em 1em; }
+.orderanniu a { color: rgb(255, 255, 255); text-align: center; text-decoration: none; display: inline-block; }
+.orderanniu a.onlinedg { font-size: 1.5em; height: 2em; line-height: 2em; width: 7em; background: rgb(153, 0, 0) none repeat scroll 0% 0%; box-shadow: 0px 5px 0px rgb(102, 0, 0); }
+.ordertwo .tel01 { color: rgb(153, 153, 153); line-height: 1.8em; font-size: 1.2em; }
+.ordertwo .tel01 span { margin-right: 0.3em; display: inline-block; }
+.ordertwo .tel01 img { width: 1.2em; margin-right: 0.1em; margin-top: 6%; vertical-align: top; }
+.order { font-size: 1.2em; }
+.order p { font-weight: bold; color: rgb(51, 51, 51); text-align: left; margin: 0.5em 0.5em 0em; }
+.order p span { color: rgb(153, 0, 0); vertical-align: top; margin-top: 0.3em; }
+.order p input { width: 60%; height: 2.4em; border: 1px solid rgb(204, 204, 204); text-indent: 5px; }
+.order p textarea { width: 58%; height: 5em; border: 1px solid rgb(204, 204, 204); color: rgb(136, 136, 136); padding: 6px; }
+.order p span.mleft { color: rgb(51, 51, 51); margin-left: 0.8em; vertical-align: top; }
+.submit { background: rgb(240, 101, 8) none repeat scroll 0% 0%; border: 0px none; box-shadow: 0px 5px 0px rgb(203, 84, 4); color: rgb(255, 255, 255); height: 2.2em; line-height: 2.2em; width: 6.5em; font-size: 1.2em; margin: 0.8em 0em 1em 9em; cursor: pointer; }
+.delivery { font-size: 1.3em; color: rgb(102, 102, 102); text-align: left; background: rgb(224, 224, 224) none repeat scroll 0% 0%; padding: 0.5em 0em; line-height: 1.6em; margin-bottom: 5.6em; }
+.delivery p { margin-left: 0.5em; }
+.delivery p span { color: rgb(0, 0, 0); }
+.bottom { position: fixed; bottom: 0px; z-index: 999; }
+.bottom a { position: relative; display: block; }
+.bottom a .img01 { width: 100%; }
+.bottom a img { display: block; margin: 0px auto; width: 100%; }
+.bottom a .img02 { width: 28%; position: absolute; top: 48%; right: 8%; }
