@@ -7,17 +7,12 @@ let moment = require('moment');
 let mysql = require('mysql');
 let app = new Koa();
 let router = new Router();
-try{
-	let pool = mysql.createPool({
-		host: '127.0.0.1',
-		user: 'root',
-		password: '1qaz2wsxpl,okm',
-		database: 'db20180807'
-	});
-}catch(e){
-	console.log(e);
-}
-
+let pool = mysql.createPool({
+	host: '127.0.0.1',
+	user: 'root',
+	password: '1qaz2wsxpl,okm',
+	database: 'db20180807'
+});
 router.post('/message/add', async ctx => {
 	let { name, phone, address, remark } = ctx.request.body;
 	let create_time = moment().format('YYYY-MM-DD HH:mm');
