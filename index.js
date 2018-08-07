@@ -89,7 +89,7 @@ router.get('/message/list', async ctx => {
 	};
 	ctx.body = await returnResults();
 });
-// app.use(bodyParser());
+app.use(bodyParser());
 let files = {};
 app.use(staticCache(require('path').join(__dirname, 'download'), {
 	// maxAge: 365 * 24 * 60 * 60,
