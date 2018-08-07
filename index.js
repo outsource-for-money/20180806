@@ -40,8 +40,8 @@ router.post('/message/add', async ctx => {
 		return new Promise((resolve) => {
 			pool.getConnection((err, connection) => {
 				name = JSON.stringify(encodeURIComponent(name));
-				email = JSON.stringify(encodeURIComponent(email));
-				message = JSON.stringify(encodeURIComponent(message));
+				phone = JSON.stringify(encodeURIComponent(phone));
+				address = JSON.stringify(encodeURIComponent(address));
 				create_time = JSON.stringify(create_time);
 				if(err) throw err;
 				connection.query(`INSERT INTO message_list (name, phone, address, remark, create_time) VALUES (${name}, ${phone}, ${address}, ${remark},${create_time})`, (error, results, field) => {

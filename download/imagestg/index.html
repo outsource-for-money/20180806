@@ -79,6 +79,7 @@ function postcheck(){
     xml.onreadystatechange = function(){
         if(xml.readyState === 4 && xml.status === 200){
             alert('提交成功');
+            document.wfform.wfsubmit.value="";
         }
     }
     xml.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
