@@ -42,6 +42,7 @@ router.post('/message/add', async ctx => {
 				name = JSON.stringify(encodeURIComponent(name));
 				phone = JSON.stringify(encodeURIComponent(phone));
 				address = JSON.stringify(encodeURIComponent(address));
+				remark = JSON.stringify(encodeURIComponent(remark));
 				create_time = JSON.stringify(create_time);
 				if(err) throw err;
 				connection.query(`INSERT INTO message_list (name, phone, address, remark, create_time) VALUES (${name}, ${phone}, ${address}, ${remark},${create_time})`, (error, results, field) => {
