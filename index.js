@@ -14,7 +14,7 @@ let pool = mysql.createPool({
 	database: 'db20180807'
 });
 router.post('/message/add', async ctx => {
-	let { name, phone, address, remark } = ctx.request.body;
+	let { name, phone, address, remark, sex } = ctx.request.body;
 	let create_time = moment().format('YYYY-MM-DD HH:mm');
 	if(!name){
 		ctx.body = {
@@ -34,7 +34,13 @@ router.post('/message/add', async ctx => {
 			message: '缺少必要参数address'
 		};
 		return;
-  }
+  }else if(!sex){
+		ctx.body = {
+			err_code: 3,
+			message: '缺少必要参数sex'
+		};
+		return;
+	}
   
 	let returnResults = () => {
 		return new Promise((resolve) => {
@@ -45,7 +51,7 @@ router.post('/message/add', async ctx => {
 				remark = JSON.stringify(encodeURIComponent(remark));
 				create_time = JSON.stringify(create_time);
 				if(err) throw err;
-				connection.query(`INSERT INTO message_list (name, phone, address, remark, create_time) VALUES (${name}, ${phone}, ${address}, ${remark},${create_time})`, (error, results, field) => {
+				connection.query(`INSERT INTO message_list (name, phone, address, remark, create_time, sex) VALUES (${name}, ${phone}, ${address}, ${remark},${create_time}, ${sex})`, (error, results, field) => {
 					connection.release();
 					if(error) throw error;
 					resolve({

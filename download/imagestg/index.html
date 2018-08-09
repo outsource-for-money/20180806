@@ -13,6 +13,8 @@
 .STYLE1 {color: #FF0000}
 
         -->
+
+
     </style>
 </head>
 <body>
@@ -30,6 +32,14 @@
                     <li><span class="bdl"><em>*</em>姓名</span><span class="bdr">
               <input type="text" name="name" class="txt kda"></span></li>
                     <li><span class="bdl"><em>*</em>手机号码</span><span class="bdr"><input type="text" name="phone" class="txt kda"></span></li>
+                    <li><span class="bdl"><em>*</em>性别</span><span class="bdr">
+                        <label for="man">
+                            <input type='radio' id='man' name='sex' value='1' class="dxk" checked='true'/>男
+                        </label>
+                        <label for='woman'>
+                            <input type="radio" id='woman' name="sex" value='2' class="dxk"/>女
+                        </label>
+                    </span></li>
 					<li><span class="bdl"><em>*</em>详细地址</span><span class="bdr"><input type="text" name="address" class="txt kda"></span></li>
                    
                     <li class="guest"><span class="bdl">留言</span><span class="bdr"><textarea name="comment" onfocus="if(value==&#39;请尽量在星期天送货，送货之前手机联系，谢谢！&#39;){value=&#39;&#39;}" onblur="if (value ==&#39;&#39;){value=&#39;请尽量在星期天送货，送货之前手机联系，谢谢！&#39;}" class="guest kda">如果有其它需求，请在此说明</textarea></span></li>
@@ -44,7 +54,8 @@ function postcheck(){
     var name = document.wfform.name.value,
         phone = document.wfform.phone.value,
         address = document.wfform.address.value,
-        remark = document.wfform.comment.value;
+        remark = document.wfform.comment.value,
+        sex = document.wfform.sex.value;
     if ( name ==""){
         alert('请填写姓名！');
         document.wfform.name.focus();
@@ -72,6 +83,11 @@ function postcheck(){
         document.wfform.address.focus();
         return false;
     }
+    if(sex !== '1' || sex !== '2'){
+        alert('请选择正确的性别');
+        /* document.wfform.address.focus(); */
+        return false;
+    }
     document.wfform.wfsubmit.disabled = true;
     document.wfform.wfsubmit.value="正在提交，请稍等 >>";
     var xml = new XMLHttpRequest();
@@ -83,7 +99,7 @@ function postcheck(){
         }
     }
     xml.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
-    xml.send('name=' + name + '&phone=' + phone + '&address=' + address + '&remark=' + remark);
+    xml.send('name=' + name + '&phone=' + phone + '&address=' + address + '&remark=' + remark + '&sex=' + parseInt(sex));
     return true;
 }
 var wfllref = '';
